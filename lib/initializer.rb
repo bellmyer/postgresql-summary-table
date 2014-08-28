@@ -1,7 +1,7 @@
 require 'rubygems'
 require 'sequel'
 
-require_relative './pets.rb'
+require_relative './setup'
 
 DB = Sequel.connect(ENV['DATABASE_URL'] || 'postgres://postgres:postgres@localhost/rc-postgresql-summary-table')
 
